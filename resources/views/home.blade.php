@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    @dump($data)
+    <ul>
+        @foreach ($data as $movie)
+            <li>
+                <p>Titolo: {{$movie['title']}}</p>
+                <p>Titolo originale: {{$movie['original_title']}}</p>
+                <p>Anno: {{$movie['date']}}</p>
+                <p>Paese: {{$movie['nationality']}}</p>
+            </li>
+        @endforeach
+    </ul>
+
+
+
 </body>
 </html>

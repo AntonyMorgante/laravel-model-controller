@@ -10,6 +10,7 @@ class PageController extends Controller
 {
     public function index(){
         $data= Movie::all();
+        $data= $data->toArray();
         return view('home',["data"=>$data]);
     }
 }
