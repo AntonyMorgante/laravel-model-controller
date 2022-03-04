@@ -1,1 +1,45 @@
-//
+@import "partials/header.scss";
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: rgb(20,20,20);
+    height: calc(100vh - 85px);
+}
+
+.container{
+    max-width: 1170px;
+    margin:0 auto;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin:0;
+    padding-top:20px;
+
+    li{
+        flex-basis: 20%;
+        background-color: lightgrey;
+        margin: 10px 15px;
+    }
+}
+
+.movie-info{
+    padding:20px;
+
+    p{
+        margin:15px;
+    }
+
+    .bold-text{
+        font-weight: bold;
+    }
+}
